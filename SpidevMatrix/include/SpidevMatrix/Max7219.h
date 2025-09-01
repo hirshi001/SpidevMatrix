@@ -34,7 +34,7 @@ private:
     int numMatrices;
     int intensity{0x03}; // Default intensity
 
-    bool dirtyRow[8]; // Track which rows need updating
+    bool dirtyRow[8] = {true, true, true, true, true, true, true, true}; // Track which rows need updating
     std::vector<uint8_t> matrixBuffer;
 
     SPI& spi;
