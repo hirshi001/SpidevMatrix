@@ -1,6 +1,3 @@
-include(FetchContent)
-
-# Ensure spidev-lib++ is available (only fetch if missing)
 if(NOT TARGET spidev-lib++)
     FetchContent_Declare(
             spidev
